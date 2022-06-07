@@ -66,13 +66,7 @@ Lower case Alphabet, Upper case Alphabet, digits and some few special character 
 
 Unfortunately you still can transmit UNSAFE character in url but they need to be "%" encoded or url encoded 
 
-Space	%20
-"	%22
-<	%3C
->	%3E
-#	%23
-%	%25
-|	%7C
+Space	%20  "  	%22   < 	%3C  >  	%3E etc.
 
 
 For more info [Visit here](https://developers.google.com/maps/url-encoding)
@@ -125,3 +119,10 @@ POST/Redirect/GET.
 After POST operation server redirect to another url and then GET for displaying resource. this is called
 POST/Redirect/GET
 
+### Request Messages
+
+[method] [URL] [version]  << Start line
+[headers]
+[body]
+
+For GET request there is no [body] . There will be one or more [headers]
