@@ -90,7 +90,7 @@ Thats where the content negotiation mechanism comes in.
 A client can also send request with media type that it will accept.
 
 
-### 11 Message Type
+### 11. Message Type
 
 HTTP > HTTP1.1 define language that can understand every client and server on the internet.
 It defines messages can exchange on the web.
@@ -100,7 +100,7 @@ There are two types of messages.
 2. HTTP Response. Server sends back to the client
 
 
-### 12 HTTP Request Methods
+### 12. HTTP Request Methods
 
 GET : Retrieve a resource
 POST : Update a resource
@@ -110,7 +110,7 @@ HEAD : Retrieve the headers for a resource
 
 Many more but HTML specification only use GET and POST
 
-### Safe vs Unsafe
+### 13. Safe vs Unsafe
 
 GET is safe because its only allow to read and view not editing
 POST is unsafe because its usually changes resources in the server
@@ -119,10 +119,34 @@ POST/Redirect/GET.
 After POST operation server redirect to another url and then GET for displaying resource. this is called
 POST/Redirect/GET
 
-### Request Messages
+### 14. Request Messages
 
 [method] [URL] [version]  << Start line
 [headers]
 [body]
 
 For GET request there is no [body] . There will be one or more [headers]
+
+[headers] contains more information like we saw in content Negotiation
+
+### 15. Status Code
+
+The status code tells the client that is the response successful or different types of error.
+
+100-199 > informational
+200-209 > Successful
+300-309 > Redirection
+400-499 > Client Error
+500-599 > Server Error
+
+### 16. Whirlwind Networking
+
+HTTP is an Application Layer protocol. Because it allows two application to communicate over the network.
+Quite often one application is web browser and another is Web server.
+
+How a message actually travel?
+
+A Message from web browser has to travel down through a series of protocol and then travel up through a series of protocol in serverside
+
+
+        
