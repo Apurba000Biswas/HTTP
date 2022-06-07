@@ -148,5 +148,9 @@ How a message actually travel?
 
 A Message from web browser has to travel down through a series of protocol and then travel up through a series of protocol in serverside
 
+<div>
+  <img src ="images/http-1.png" alt="http 1">
+</div>
+
 
         
