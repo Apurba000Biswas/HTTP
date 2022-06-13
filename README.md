@@ -152,5 +152,27 @@ A Message from web browser has to travel down through a series of protocol and t
   <img src ="images/http-1.png" alt="http 1">
 </div>
 
+### 17 TCP Handshake :
 
-        
+Before HTTP involves , Some handshaking take place between client and the server in the TCP layer.
+
+### 18 Evolution HTTP : 
+Previously a client request for a resource and get the response and close the connection.
+But today's website can request for 100+ times to load a site fully. so everytime opening and closing the connection
+is costly and would slow the loading time . so Now connection creating/handshaking process occurs one time to load the 
+resources.
+
+### 19 Parallel Connection : 
+Internet Explorer 6 allows maximum 2 parallel connection for HTTP specification.
+There are many work around to achieve 4 parallel connection to the same server(By changing the DNS name and pointing to the same server)
+
+But now Internet Explorer 8 can use 6 parallel request in the same server.
+
+### 20 Persistent Connection:
+
+<div>
+  <img src ="images/http-2.png" alt="http 1">
+</div>
+
+There are some issue using persistent connection . because we dont know when this connection will be closed . thats
+why now most recently apche allows default timeout is 5 sec.
